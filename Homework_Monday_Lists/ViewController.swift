@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// extension to hide keyboard when user taps somewhere else on the screen.
 extension UIViewController
 {
     func setupToHideKeyboardOnTapOnView()
