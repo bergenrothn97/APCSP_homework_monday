@@ -51,19 +51,19 @@ class ViewController: UIViewController {
         // activiates the touch outside of the keyboard to dismiss the keyboard when finished answering
         self.setupToHideKeyboardOnTapOnView()
 
-        // initiatlizes the question level with the first question fro the questions array
+        // initiatlizes the question level with the first question from the questions array
         lblQuestion.text = questions[0]
     
     }
 
-    // this function fires when the "store answer button is clicked by the user"
+    // this function fires when the store answer button is clicked by the user
     
     @IBAction func storeAnswer(_ sender: Any) {
         
         if let answer = textAnswer.text {
             
             
-            // if the user has record a response then we store the value and update the UI
+            // if the user has recorded a response then we store the value and update the UI
             answers.append(answer)
                         
             // concantanates the values in the answers array together
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             // clears the show answers field for display of the all of the answers stored so far
             txtShowAnswers.text = ""
             
-            // displays the answers so far in the text field
+            // displays the answers so far in the text field at the bottom of the screen
             txtShowAnswers.text = string
             
             // debugging to log the answers string to check it is all working
